@@ -34,6 +34,29 @@ class App extends Component{
       console.log("vowelsArray:", vowelsArray)
 
       // your code here!
+    var con = [ "b", "c", "d", "f", "g", "j", "k", "l", "m", "n", "p", "q", "s", "t", "v", "x", "z", "h", "r", "w"]
+  
+
+
+    // let constonantsWord = currentWord.split("").filter(constonants => {
+    //   return constonants !== "a" || constonants !== "e" || constonants !== "i" || constonants !== "o" || constonants !== "u"
+    // })
+
+    console.log("vowelsArray:", vowelsArray)
+// If a word starts with a vowel, add "way" to the end. 
+if(currentWord[0] === vowelsArray[0]) {
+  return currentWord + "way"
+}
+// Else if a word starts with a constonants, find the first vowel in the word. 
+ else if(currentWord[0] !== vowelsArray){
+   return vowelsArray[0] 
+  // return vowelsArray[0] + constonantsWord.join(" ") + "ay"
+} //oughthray
+//Move every word before the vowel after and add "ay" to the end .
+// Else if word starts with qu-, find the first vowel and move everything before to the end, adding "ay" to the end.
+
+// Else if qu- is in the first syllable, find the first vowel that is not u and move everything before to the end. Add "ay" to the end. 
+// If there is no vowel, but there is y, treat y as a vowel. If y is a constonants, treat it as a constonant. 
 
       // Remember: console.log is your friend :)
 
